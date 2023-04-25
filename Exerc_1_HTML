@@ -1,0 +1,38 @@
+<template>
+	<lightning-card>
+		<div class="containerprincipal">
+			<div class="slds-m-arround_medium">
+				<h1 class="slds-text-heading_large">
+					Empresa:
+				</h1>
+				<p>Empresa: {emp}</p>
+				<p>CNPJ: {cnpj}</p>
+				<p>Endereço: {end}</p>
+			</div>
+
+			<div class="slds-m-arround_medium" if:true={change}>
+				<h1 class="slds-text-heading_large">
+					Produto:
+				</h1>
+				<p>Produto: {prod}</p>
+				<p>Descrição: {desc}</p>
+				<p>Preço: R$ {prec}</p>
+			</div>
+
+			<div class="slds-m-arround_medium" if:true={change}>
+				<h1 class="slds-text-heading_large">
+					Promoção:
+				</h1>
+				<p>Oferta 1: R$ {of1}</p>
+				<p>Oferta 2: R$ {of2}</p>
+
+			</div>
+		</div>
+
+		<br>
+		<lightning-button variant="destructive" label="Sumiu" title="Esconde as informações" onclick={Botao}
+			class="slds-m-left_x-small"></lightning-button>
+
+
+	</lightning-card>
+</template>
