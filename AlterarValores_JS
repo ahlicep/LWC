@@ -1,0 +1,41 @@
+import { LightningElement } from 'lwc';
+
+export default class Aula1nan extends LightningElement {
+
+  
+    nome = "Alice";
+    tel = "997629063";
+    cpf = 12345678910;
+    id = 25;
+
+    nome2 = "Gabriel";
+    tel2 = "998355400";
+    cpf2 = 10987654321;
+    id2 = 28;
+
+    email = "ahlice@live.com";
+    linkedin = "https://www.linkedin.com/in/alice-augusta-esteves-pinheiro-machado-77b075208/";
+    inst = "https://www.instagram.com/ahlicep/";
+
+    email2 = "gaaspar.gaabriel@gmail.com";
+    linkedin2 = "https://www.linkedin.com/in/gabriel-gaspar-a8ab64228/";
+    inst2 = "https://www.instagram.com/ga.gasp/";
+
+    visible = true;
+    change = true;
+
+  trocarDiv(){
+
+  (this.visible = !this.visible);
+  (this.change = false);
+  
+  }
+
+  outraOp(){
+
+  (this.change = !this.change);
+  (this.visible = false);
+  }
+
+
+  }
