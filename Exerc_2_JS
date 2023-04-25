@@ -1,0 +1,17 @@
+import { LightningElement } from 'lwc';
+
+export default class Aula1nan extends LightningElement {
+
+
+    visible = true;
+    visible1 = false;
+
+
+  Sumiu(){
+
+  (this.visible = !this.visible);
+  (this.visible1 = !this.visible1);
+  
+  }
+
+  }
