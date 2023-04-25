@@ -1,0 +1,4 @@
+h1 {
+    color: rgb(227, 82, 15);
+    font-family: FreeMono, monospace;
+}
