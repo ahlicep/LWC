@@ -1,0 +1,26 @@
+import { LightningElement } from 'lwc';
+
+export default class Aula1nan extends LightningElement {
+
+  
+    emp = "Max Homemade Cupcakes";
+    cnpj = "018885950000163";
+    end = "Rua Amapá, 50";
+    prod = "Cupcake de ninho";
+
+    desc = "Cupcake caseiro com sabor de leite ninho";
+    prec = 10;
+    of1 = 6;
+    of2 = 8;
+
+    change = true;
+    change2 = true;
+    change3 = true;
+
+  Botao(){
+
+  (this.change = !this.change);
+  
+  }
+
+  }
