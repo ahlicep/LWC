@@ -1,0 +1,68 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-arround_medium" if:true={change}>
+			<h1 class="slds-text-heading_large">
+				Dados:
+			</h1>
+
+
+
+			<p>Nome: {nome2}</p>
+			<p>Telefone: {tel2}</p>
+			<p>CPF: {cpf2}</p>
+			<p>Idade: {id2}</p>
+
+			<br>
+			<h1 class="slds-text-heading_large">
+
+				Outros dados:
+
+			</h1>
+
+			<p>
+				<lightning-formatted-email value={email} label="Email"></lightning-formatted-email>
+			</p>
+			<p>Instagram: <a href={inst2} target="_blank">Clique aqui</a></p>
+			<p>LinkedIn: <a href={linkedin2} target="_blank">Clique aqui</a></p>
+		</div>
+
+		<div class="slds-m-arround_medium" if:true={visible}>
+			<h1 class="slds-text-heading_large">
+				Dados:
+			</h1>
+
+
+
+			<p>Nome: {nome}</p>
+			<p>Telefone: {tel}</p>
+			<p>CPF: {cpf}</p>
+			<p>Idade: {id}</p>
+
+			<br>
+			<h1 class="slds-text-heading_large">
+
+				Outros dados:
+
+			</h1>
+
+			<p>
+				<lightning-formatted-email value={email} label="Email"></lightning-formatted-email>
+			</p>
+			<p>Instagram: <a href={inst} target="_blank">Clique aqui</a></p>
+			<p>LinkedIn: <a href={linkedin} target="_blank">Clique aqui</a></p>
+		</div>
+
+		<br>
+		<lightning-button variant="destructive" label="EXPLODA TUDO" title="Esconde as informações" onclick={trocarDiv}
+			class="slds-m-left_x-small"></lightning-button>
+
+		<br>
+
+		<br>
+
+		<lightning-button variant="success" label="Alterar Valores" title="Troca de informações" onclick={outraOp}
+			class="slds-m-left_x-small"></lightning-button>
+
+
+	</lightning-card>
+</template>
