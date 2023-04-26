@@ -1,0 +1,8 @@
+import { LightningElement } from 'lwc';
+
+export default class exerc3 extends LightningElement {
+
+//aqui fica vazio! esse é o filho :)
+//é esse que a gente dá deploy
+
+}
