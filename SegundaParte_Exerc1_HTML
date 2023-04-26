@@ -3,14 +3,14 @@
 
 			<div class="slds-m-around_medium">
 				<h1 class="slds-text-heading_large">
-					Lead ({leads.primeironome}) ({leads.sobrenome})
+					Lead ({leads.primeironome} {leads.sobrenome})
 				</h1>
 <div class="dados">       
 <p> Idade: {leads.idade}</p>
 <p> E-mail: {leads.email}</p>
 <p> Classificação: {leads.classif}</p>
 <p> Empresa: {leads.empresa}</p>
-<p> Receita Anual: {leads.receita}</p>
+<p> Receita Anual: R$ {leads.receita}</p>
 </div>
 </div> 
 
