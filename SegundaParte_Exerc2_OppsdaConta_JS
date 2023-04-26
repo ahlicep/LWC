@@ -1,0 +1,11 @@
+import { LightningElement, api } from 'lwc';
+
+export default class oppsdaconta extends LightningElement {
+
+    @api ide;
+    @api nome;
+    @api valor;
+    @api fase;
+}
+
+//este é o pai
