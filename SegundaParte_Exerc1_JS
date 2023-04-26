@@ -1,9 +1,6 @@
 import { LightningElement} from 'lwc';
 
-export default class Exerc1 extends LightningElement {
-
-
-
+export default class exerc1 extends LightningElement {
 
     leads = {
         primeironome: "Alice",
