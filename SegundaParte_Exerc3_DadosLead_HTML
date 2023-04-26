@@ -1,0 +1,7 @@
+<template>
+    <p>ID: {ide}</p>
+    <p>Nome completo: {name}</p>
+    <p>Empresa: {company}</p>
+    <p>Status: {status}</p>
+    <p>Origem: {origem}</p>
+</template>
