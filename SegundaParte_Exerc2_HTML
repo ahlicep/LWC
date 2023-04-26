@@ -1,0 +1,29 @@
+<template>
+	<lightning-card>
+
+			<div class="slds-m-around_medium">
+				<h1 class="slds-text-heading_large">
+					Dados!
+				</h1>
+<div class="dados">       
+
+<br/><lightning-icon icon-name="custom:custom11" title="1"></lightning-icon><c-oppsdaconta ide = "1" nome = "Renan" valor = "R$100000" fase = "Negociação"></c-oppsdaconta><br/>
+
+<lightning-icon icon-name="custom:custom11" title="2">
+</lightning-icon><c-oppsdaconta ide = "2" nome = "Alice" valor = "R$50000" fase = "Aguardando"></c-oppsdaconta><br/>
+
+<lightning-icon icon-name="custom:custom11" title="3">
+</lightning-icon><c-oppsdaconta ide = "3" nome = "Gabriel" valor = "R$600" fase = "Pagamento"></c-oppsdaconta><br/>
+
+<lightning-icon icon-name="custom:custom11" title="4">
+</lightning-icon><c-oppsdaconta ide = "4" nome = "Matheus" valor = "R$80" fase = "Qualificação"></c-oppsdaconta><br/>
+	
+<lightning-icon icon-name="custom:custom11" title="5">
+</lightning-icon><c-oppsdaconta ide = "5" nome = "Mariana" valor = "R$8470" fase = "Análise"></c-oppsdaconta>
+<br/>
+        
+</div>
+</div> 
+
+    </lightning-card>
+</template>
