@@ -1,0 +1,18 @@
+import { LightningElement} from 'lwc';
+
+export default class Exerc1 extends LightningElement {
+
+
+
+
+    leads = {
+        primeironome: "Alice",
+        sobrenome: "Machado",
+        idade: 25,
+        email: "ahlice@live",
+        classif: "Hot",
+        empresa: "SoulCode",
+        receita: 50000
+    }
+
+}
