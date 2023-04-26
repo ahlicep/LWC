@@ -1,0 +1,23 @@
+<template>
+	<lightning-card>
+
+			<div class="slds-m-around_medium">
+				<h1 class="slds-text-heading_large">
+					Leads!
+				</h1>
+<div class="dados">       
+
+	<lightning-icon icon-name="custom:custom51" title="1"></lightning-icon>
+	<c-dadoslead ide = "1" name = "Caroline Channing" company = "Max's Homemade Cupcakes" status = "Open - Not Contacted" origem = "Web"></c-dadoslead><br/>
+	<lightning-icon icon-name="custom:custom51" title="2"></lightning-icon>
+	<c-dadoslead ide = "2" name = "Max Black" company = "Max's Homemade Cupcakes" status = "Closed - Converted" origem = "Other"></c-dadoslead><br/>
+	<lightning-icon icon-name="custom:custom51" title="3"></lightning-icon>
+	<c-dadoslead ide = "3" name = "Earl" company = "Restaurante" status = "Working - Contacted" origem = "Phone"></c-dadoslead><br/>
+	<lightning-icon icon-name="custom:custom51" title="4"></lightning-icon>
+	<c-dadoslead ide = "4" name = "Han Lee" company = "Restaurante" status = "Closed - Not Converted" origem = "Web"></c-dadoslead><br/>
+
+</div>
+</div> 
+
+    </lightning-card>
+</template>
