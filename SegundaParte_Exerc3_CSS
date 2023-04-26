@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    background-color: #61601C;
+    color: #E5E477;
+    font-family: FreeMono, monospace;
+    border-radius: 20px;
+}
+
+
+.dados{
+    text-align: center;
+    font-size: large;
+    background-color: #E5E477;
+    border-radius: 20px;
+    font-family: FreeMono, monospace;
+}
