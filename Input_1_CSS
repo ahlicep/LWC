@@ -1,0 +1,16 @@
+
+.result {
+    text-align: center;
+    color: green;
+}
+
+
+.botao{
+    text-align: center;
+}
+
+.tit{
+    text-align: center;
+    color: green;
+    font-size: larger;
+}
