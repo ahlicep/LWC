@@ -1,0 +1,13 @@
+.visible{
+    color:#1369E8
+}
+
+.botao{
+    text-align: center;
+}
+
+.tit{
+    text-align: center;
+    font-size: xx-large;
+    color: #1369E8;
+}
