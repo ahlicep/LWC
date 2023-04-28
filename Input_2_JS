@@ -1,0 +1,48 @@
+import { LightningElement } from 'lwc';
+
+export default class exercinput2 extends LightningElement {
+
+    visible = false;
+
+    inputs = {
+        primeironome: "",
+        sobrenome: "",
+        email: "",
+        website: "",
+        empresa: "",
+        receita: ""
+    }
+    primeironome2 = "";
+    sobrenome2 = "";
+    email2 = "";
+    website2 = "";
+    empresa2 = "";
+    receita2 = "";
+
+
+
+    handleInputChange(event) {
+
+        let nInput = event.target.name;
+        let value = event.detail.value;
+
+        this.inputs = {
+            ...this.inputs,
+            [nInput]: value
+        }
+
+        this.primeironome2 = this.inputs.primeironome;
+        this.sobrenome2 = this.inputs.sobrenome;
+        this.email2 = this.inputs.email;
+        this.website2 = this.inputs.website;
+        this.empresa2 = this.inputs.empresa;
+        this.receita2 = this.inputs.receita;
+
+    }
+    handleOnClick() {
+
+        this.visible = !this.visible;
+
+
+    }
+}
