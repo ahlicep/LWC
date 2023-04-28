@@ -1,0 +1,31 @@
+<template>
+	<lightning-card title="">
+
+		<div class="slds-m-around_medium">
+            <div class="tit"> Cadastre seus dados: </div><br/>
+			<lightning-input label="Primeiro Nome: " type="text" name="primeironome" onchange={handleInputChange}></lightning-input>
+			<lightning-input label="Sobrenome: " type="text" name="sobrenome" onchange={handleInputChange}></lightning-input>
+			<lightning-input label="E-mail: " type="email" name="email"  onchange={handleInputChange}></lightning-input>
+            <lightning-input label="WebSite: " type="url" name="website" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Empresa: " type="text" name="empresa" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Receita Anual: " type="number" name="receita" onchange={handleInputChange}></lightning-input>
+
+		</div>
+        <br/>
+        <div class="botao">
+		<lightning-button variant="brand" label="Cadastrar!" onclick={handleOnClick} class="slds-m-left_x-small"></lightning-button>
+        </div>
+       
+        <div if:true={visible} class="visible">
+            
+        <p>Nome: {primeironome2} {sobrenome2}</p>
+        <p>E-mail: {email2}</p>
+        <p>WebSite: {website2}</p>
+        <p>Empresa: {empresa2}</p>
+        <p>Receita Anual: {receita2}</p>
+        </div>
+	</lightning-card>
+
+
+
+</template>
