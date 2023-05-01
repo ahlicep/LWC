@@ -1,0 +1,26 @@
+<template>  
+    <div class="slds-box slds-theme_shade">
+    <div class="tit">Calculadora :)</div>
+     <lightning-input type="number" name="input1" label="Insira um número:" onchange={handleNumberOneChange} value={n1}></lightning-input>  
+     <lightning-input type="number" name="input2" label="Insira um número:" onchange={handleNumberTwoChange} value={n2}></lightning-input>  
+   </div>  
+
+   <div class="operacoes">
+    <div class="slds-box slds-theme_shade">  
+     <lightning-button label="+" onclick={soma}> </lightning-button>  
+     <lightning-button label="*" onclick={mult}> </lightning-button>  
+     <lightning-button label="-" onclick={subt}> </lightning-button>  
+     <lightning-button label="/" onclick={div}> </lightning-button>
+    </div>  
+
+
+    <div class="slds-box slds-theme_shade"> 
+        <lightning-button label="=" onclick={click}> </lightning-button>
+        <br/>  
+        <div if:true={visible} class="visible">
+          <p>{resultValue}</p>  
+    <lightning-button variant=”destructive” label="Limpar" class=”slds-m-left_x-small” onclick={limpar}></lightning-button> 
+        </div>
+        </div>
+       </div>  
+ </template>  
