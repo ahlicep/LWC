@@ -1,0 +1,46 @@
+import { LightningElement, track} from 'lwc';
+export default class CalculatorInLwc extends LightningElement {
+    
+    visible = false; // deixo o resultado ocultado
+
+    @track n1; //rastreia a variavel dentro do html (track)
+    @track n2;
+    resultValue;
+    handleNumberOneChange(event) {
+        this.n1 = parseInt(event.target.value); //parseInt converte em string, analisa e retorna n inteiro
+    }
+    handleNumberTwoChange(event) {
+        this.n2 = parseInt(event.target.value);
+    }
+    soma() {
+        this.resultValue = parseInt(this.n1) + parseInt(this.n2); //se nao fizer assim, vai concatenar
+    }
+    mult() {
+        this.resultValue = this.n1 * this.n2;
+    }
+    subt() {
+        this.resultValue = this.n1 - this.n2;
+    }
+    div() {
+        this.resultValue = this.n1 / this.n2;
+        if (this.n2 == 0) {
+            alert("Não é possivi :("); //mensagem de erro caso o segundo campo de input esteja zerado
+        }
+    }
+
+    limpar(){ //botão para limpar os inputs
+        this.n1 = null;
+        this.n2 = null;
+        this.resultValue = null;
+      }
+
+      click() {
+
+        this.visible = !this.visible;
+
+
+    }
+
+
+    
+}
