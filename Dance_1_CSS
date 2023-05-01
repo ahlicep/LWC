@@ -1,0 +1,10 @@
+.operacoes{
+    text-align: center;
+    color: coral;
+}
+
+.tit{
+    color: coral;
+    font-size: xx-large;
+    text-align: center;
+}
